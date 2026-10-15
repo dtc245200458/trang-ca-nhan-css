@@ -1,0 +1,52 @@
+body {
+    margin: 24px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #222;
+}
+main { max-width: 1000px; margin: 0 auto; }
+section { margin-bottom: 32px; }
+h1 { color: #174c86; }
+h2 { font-size: 20px; }
+.scroll { overflow-x: auto; }
+/* 1. Đường viền riêng, chưa gộp */
+.borders, .borders th, .borders td { border: 1px solid black; }
+.borders { border-collapse: separate; border-spacing: 2px; }
+/* 2. Gộp các đường viền liền kề */
+.collapsed { border-collapse: collapse; }
+.collapsed, .collapsed th, .collapsed td { border: 1px solid black; }
+/* 3. Chiều rộng bảng và chiều cao tiêu đề */
+.dimensions { width: 100%; border-collapse: collapse; }
+.dimensions, .dimensions th, .dimensions td { border: 1px solid black; }
+.dimensions th { height: 50px; }
+/* 4. Căn ngang về bên trái */
+.horizontal { border-collapse: collapse; }
+.horizontal, .horizontal th, .horizontal td { border: 1px solid black; }
+.horizontal th { text-align: left; }
+/* 5. Căn dọc xuống dưới */
+.vertical { border-collapse: collapse; }
+.vertical, .vertical th, .vertical td { border: 1px solid black; }
+.vertical td { height: 80px; vertical-align: bottom; }
+/* 6. Khoảng cách bên trong các ô */
+.padded { border-collapse: collapse; }
+.padded, .padded th, .padded td { border: 1px solid black; }
+.padded th, .padded td { padding: 15px; }
+/* 7. Màu sắc */
+.colored { border-collapse: collapse; }
+.colored, .colored th, .colored td { border: 1px solid black; }
+.colored th { background-color: #333; color: white; }
+.colored td { background-color: #f2f2f2; color: #333; }
+/* 8. Kết hợp các thuộc tính đã học */
+.summary { width: 100%; border-collapse: collapse; }
+.summary, .summary th, .summary td { border: 1px solid black; }
+.summary th, .summary td { padding: 15px; text-align: left; }
+.summary th { height: 50px; background-color: #333; color: white; }
+.summary td {
+    height: 80px;
+    vertical-align: bottom;
+    background-color: #f2f2f2;
+    color: #333;
+}
+@media (max-width: 480px) {
+    body { margin: 16px; }
+}
